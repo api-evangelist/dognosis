@@ -1,8 +1,26 @@
 aid: dognosis
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dognosis.png
 name: Dognosis
-description: 'Dognosis is a company surfaced as a portfolio company of prosus-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: health. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Dognosis is a Bengaluru, India deeptech company building olfaction AI that pairs trained
+  detection dogs with machine learning to find disease from a single breath sample. Its product,
+  BreathEasy, is a non-invasive breath test that produces a VOC-based cancer risk score for
+  clinicians; a Phase 2 study published in the Journal of Clinical Oncology reported over 90%
+  accuracy across seven cancer types, including at early and treatable stages. Dognosis is a
+  portfolio company of Prosus Ventures. No public developer API is published today; this API
+  Evangelist profile tracks the company's digital, discovery, and security surface (an llms.txt
+  is served; no /.well-known discovery documents are published).
 url: https://raw.githubusercontent.com/api-evangelist/dognosis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Health
+- Healthcare
+- Diagnostics
+- Cancer Detection
+- Breath Analysis
+- Olfaction AI
+- Deeptech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,15 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dognosis-domain-security.yml
+- type: LLMsTxt
+  name: llms.txt
+  url: llms/dognosis-llms.txt
 - type: Website
   url: https://dognosis.tech
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

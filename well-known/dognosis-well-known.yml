@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of https://dognosis.tech/.well-known/*
+host: https://dognosis.tech
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  No /.well-known discovery documents are published. An llms.txt IS served at
+  https://dognosis.tech/llms.txt (HTTP 200) and is captured verbatim at
+  llms/dognosis-llms.txt. The site is fronted by a Cloudflare challenge, so
+  marketing pages return 403 to non-browser clients.
